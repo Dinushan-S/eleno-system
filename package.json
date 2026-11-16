@@ -1,0 +1,14 @@
+{
+  "name": "sri-lanka-elnino-alert",
+  "version": "1.0.0",
+  "description": "Offline-First El Niño Alert & Climate Diagnostic System for Sri Lanka",
+  "type": "module",
+  "scripts": {
+    "test": "node mcp_server/test_mcp.js",
+    "mcp": "node mcp_server/server.js --stdio",
+    "serve": "npx serve ."
+  },
+  "keywords": ["el-nino", "climate", "sri-lanka", "mcp", "pwa", "offline-first"],
+  "author": "Antigravity Team",
+  "license": "MIT"
+}

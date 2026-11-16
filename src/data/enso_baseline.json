@@ -1,0 +1,79 @@
+{
+  "system": "Sri Lanka El Niño Alert System (SLEnS)",
+  "version": "1.0.0",
+  "enso_thresholds": {
+    "oni_advisory_celsius": 0.5,
+    "oni_strong_celsius": 1.5,
+    "oni_very_strong_celsius": 2.0,
+    "roni_threshold_noaa": 0.5,
+    "roni_threshold_bom": 0.8,
+    "soi_sustained_negative": -7.0,
+    "subsurface_heat_anomaly_celsius": 1.5,
+    "zonal_wind_anomaly_ms": -2.0
+  },
+  "current_enso_state": {
+    "target_month": "2024-09",
+    "nino34_sst_anomaly": 1.62,
+    "oni_value": 1.58,
+    "roni_value": 1.15,
+    "soi_value": -9.4,
+    "subsurface_heat_anomaly": 1.85,
+    "zonal_wind_anomaly": -2.7,
+    "phase": "El Niño (Strong)",
+    "predictive_certainty_pct": 98.5,
+    "locking_status": "Coupled Ocean-Atmosphere Instability Locked In (Deterministic)",
+    "decay_velocity": "Slow-Decaying (SD) Multi-Year Signature"
+  },
+  "seasons_sri_lanka": {
+    "FIM": {
+      "name": "First Inter-Monsoon",
+      "months": [3, 4],
+      "mechanism": "Indo-Western Pacific Ocean Capacitor (IPOC) Effect",
+      "el_nino_effect": "Suppressed convection over 80-87% monitoring stations; early planting delay"
+    },
+    "SWM": {
+      "name": "Southwest Monsoon (Yala Season)",
+      "months": [5, 6, 7, 8, 9],
+      "mechanism": "Slow-Decaying warm Indian Ocean + WNP Anticyclone",
+      "el_nino_effect": "Severe warm summer drought across inland agricultural zones, tank depletion, hydro power stress"
+    },
+    "SIM": {
+      "name": "Second Inter-Monsoon",
+      "months": [10, 11],
+      "mechanism": "Convective thunderstorm activity & ITCZ equatorial waves",
+      "el_nino_effect": "High rainfall reliability, cyclonic disturbance, pre-filling of major irrigation tanks"
+    },
+    "NEM": {
+      "name": "Northeast Monsoon (Maha Season)",
+      "months": [12, 1, 2],
+      "mechanism": "Modulation of tropical convergence zone",
+      "el_nino_effect": "Enhanced rainfall, flood risk in Eastern & Northern dry zones; climate whiplash"
+    }
+  },
+  "drought_severity_levels": [
+    { "name": "Normal / Wet", "spi_min": -0.99, "spi_max": 3.0, "color": "#10b981", "badge": "Safe" },
+    { "name": "Moderate Drought", "spi_min": -1.49, "spi_max": -1.0, "color": "#f59e0b", "badge": "Watch" },
+    { "name": "Severe Drought", "spi_min": -1.99, "spi_max": -1.5, "color": "#f97316", "badge": "Warning" },
+    { "name": "Extreme Drought", "spi_min": -5.0, "spi_max": -2.0, "color": "#ef4444", "badge": "Critical Alert" }
+  ],
+  "wibi_insurance_triggers": {
+    "strike_level_spi": -1.5,
+    "consecutive_weeks_required": 3,
+    "payout_pct_tier_1": 40,
+    "payout_pct_tier_2": 80
+  },
+  "crop_advisories": {
+    "drought_severe": {
+      "title": "Severe Drought Mitigation Protocol",
+      "advice": "Pivot from standard 105-day paddy cultivars to drought-tolerant short-duration crops (e.g. mung bean, black gram, sesame). Implement Alternate Wetting and Drying (AWD) water management on cascade tanks."
+    },
+    "flood_warning": {
+      "title": "Maha Flood Whiplash Advisory",
+      "advice": "Inspect spillways and bund sluices across minor cascade tanks. Prepare raised seedbeds and secure drainage channels to mitigate waterlogging."
+    },
+    "normal": {
+      "title": "Standard Cultivation Protocol",
+      "advice": "Normal cultivation schedule approved. Continue monitoring weekly regional SPI indices and storage reservoir capacity."
+    }
+  }
+}
